@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+   
+    <title>IamTraveller</title>
+</head>
+<body>
+   
+<!------  Navbar  ------>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <div class="container">
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" width="40" height="40" class="d-inline-block align-top" alt=""> IamTraveller</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-plane-departure" style="color: rgb(243,188,19)"></i> FLIGHTS</a>
+              </li>
+               
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-hotel" style="color: rgb(243,188,19)"></i> HOTELS</a>
+              </li>
+              
+               <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-bus" style="color: rgb(243,188,19)"></i> BUS</a>
+              </li>
+              
+               <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-car" style="color: rgb(243,188,19)"></i> CAB</a>
+              </li>
+              
+               <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-campground" style="color: rgb(243,188,19)"></i> HOLIDAYS</a>
+              </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user" style="color: rgb(243,188,19)"></i> 
+                  My Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Customer Login</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Agent Login</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Print Ticket</a>
+                </div>
+              </li>
+
+               <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-envelope-open-text" style="color: rgb(243,188,19)"></i> Support</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!------  Modify Search    ------>
+   
+<div class="jumbotron">
+ <div class="container">
+  <p class="lead"><span>Home</span><span>&nbsp;<i class="fas fa-chevron-right"></i></span><span>&nbsp;Holiday</span><span>&nbsp;<i class="fas fa-chevron-right"></i></span>&nbsp;India
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-sliders-h"></i> Modify Search</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-map-marker-alt"></i> Search Destination</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Travel To :</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ </p>
+  <hr class="my-4">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsum dolorem nulla, sint odit distinctio voluptate cum recusandae! Distinctio tempore perspiciatis esse placeat voluptatem dicta, expedita sequi cum, qui explicabo excepturi voluptate temporibus provident, pariatur illum ipsa similique alias iusto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsum dolorem nulla, sint odit distinctio voluptate cum recusandae! Distinctio tempore perspiciatis esse placeat voluptatem dicta, expedita sequi cum, qui explicabo excepturi voluptate temporibus provident, pariatur illum ipsa similique alias iusto.</p>
+ </div> 
+</div>   
+   
+<div class="sort col-md-12 col-sm-12">
+   <div class="container">
+      <div class="custom">
+       <p class="lead">
+           <span><i class="fas fa-sort"></i> Sort By:</span><span class="hover" style="margin-left: 20px!important;">&nbsp;&nbsp;Popular</span><span class="hover" style="margin-left: 20px!important;">&nbsp;&nbsp;Duration</span><span class="hover" style="margin-left: 20px!important;">&nbsp;&nbsp;Price</span>
+       </p>
+     </div>
+     
+     <p>
+         <div class="custom1">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i class="fas fa-filter" style="text-shadow: 2px 1px rgba(0, 0, 0, 0.5);"></i> Filter</button>
+        </div>
+        </p>
+    </div>
+   </div> 
+       <div class="container">   
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+               <div class="card-group">
+                  <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Poppins', sans-serif;"><i class="fas fa-rupee-sign" style="width: 32px; height: 27px;background-color: rgb(0,35,71); color: rgb(243,188,19); border: 1px solid rgb(0,35,71);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-left: 10px;padding-top: 2px;margin-left: 15px;"></i> Price</h5>
+                      <div class="slidecontainer col-lg-12 col-md-4 col-sm-4">
+                          <input type="range" min="4000" max="72000" value="50" class="slider" id="myRange"><p style="border: 1px solid rgb(0,35,71);padding-left: 45px;background-color: rgb(0,35,71)!important;color: rgb(243,188,19)!important;border-radius: 10px!important;font-family: 'Lato', sans-serif;">Rs.4000 - Rs. <span id="demo"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-family: 'Poppins', sans-serif;"><i class="fas fa-star" style="width: 32px; height: 27px;background-color: rgb(0,35,71); color: rgb(243,188,19); border: 1px solid rgb(0,35,71);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-left: 7px;padding-top: 2px;"></i> Ratings</h5>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">
+                          <div class="star">
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                          </div> 3 Star</button>
+                          <button type="button" class="btn btn-secondary"><div class="star">
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                          </div>4 Star</button>
+                          <button type="button" class="btn btn-secondary"><div class="star">
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                              <i class="fas fa-star fa-xs"></i>
+                          </div>5 Star</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-family: 'Poppins', sans-serif;"><i class="fas fa-suitcase" style="width: 32px; height: 27px;background-color: rgb(0,35,71); color: rgb(243,188,19); border: 1px solid rgb(0,35,71);border-top-left-radius: 20px;border-bottom-left-radius: 20px;padding-left: 7px;padding-top: 2px;"></i> Package Type</h5>
+                      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                          <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-secondary">Summer Trip</button>
+                          </div>
+                          <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-secondary">Winter Trip</button>
+                          </div>
+                          <div class="btn-group" role="group" aria-label="Third group">
+                            <button type="button" class="btn btn-secondary">Beach Trip</button>
+                          </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <div class="content">
+       <div class="row">
+        <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Ladakh</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Ladakh</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/ladakh.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+         <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front2">
+                <h2>Rajasthan</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Rajasthan</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/rajasthan.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+         <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front3">
+              <h2>Meghalaya</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Meghalaya</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/meghalaya.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       
+       <div class="row">
+        <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front4">
+              <h2>Ganktok</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Ganktok</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/ganktok.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+         <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front5">
+              <h2>Goa</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Goa</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/goa.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+         <div class="flip-card col-lg-4 col-md-4 col-sm-12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front6">
+              <h2>Rishikesh</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Rishikesh</h1> 
+              <div class="stay">
+                  <p class="blue">3 Nights</p><p class="white">2 Days</p> 
+              </div>
+              <img src="./img/rishikesh.jpg" style="width: 100%; height: 200px;" alt="">
+                  <i class="fas fa-bed" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-car" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-utensils" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px;"></i>
+                  <i class="fas fa-binoculars" style="background-color: rgb(0,35,71);color: rgb(243,188,19);border-radius: 500px; padding: 5px 30px 5px 30px; margin-top: 5px;"></i>
+                <div class="stay">  
+                  <p class="features">Stay</p>
+                  <p class="features">Travel</p>
+                  <p class="features1">Meal</p>
+                  <p class="features1">Tour</p>
+                </div>
+                <p class="price" style="text-shadow: 1px 1px 2px #000;">Starting @ <span style="color: #DFAF2B!important;text-shadow: 2px 2px 2px #000;font-size: 30px;"><i class="fas fa-rupee-sign"></i> 5000/-</span></p>
+                <div class="click">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">View Details</button>
+                </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div> 
+    
+    <button class="open-button" onclick="openForm()">Ask us a question!</button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h3>Ask us a question!</h3>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
